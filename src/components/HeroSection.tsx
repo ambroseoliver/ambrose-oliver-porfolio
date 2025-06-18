@@ -11,20 +11,23 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Purple Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-blue-600 to-purple-800"></div>
-      
+
       {/* Decorative Elements */}
       <div className="absolute top-20 left-10 w-16 h-16 bg-orange-400 rounded-full opacity-80"></div>
       <div className="absolute top-40 right-20 w-8 h-8 bg-white rounded-full opacity-60"></div>
       <div className="absolute bottom-40 left-20 w-12 h-12 bg-yellow-400 rounded-full opacity-70"></div>
       <div className="absolute top-60 right-40 w-6 h-6 bg-orange-300 rounded-full opacity-80"></div>
-      
+
       {/* Geometric Shapes */}
       <div className="absolute top-32 right-10 w-20 h-20 border-4 border-white/20 rotate-45"></div>
       <div className="absolute bottom-32 right-16 w-16 h-16 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-lg rotate-12 opacity-80"></div>
-      
+
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -32,38 +35,37 @@ const HeroSection = () => {
             <div className="space-y-6">
               <div className="inline-flex items-center bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium text-white">
                 <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
-                Available for Projects
+                {/* Available for Projects */}
               </div>
-              
+
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
                 Hello, I'm
                 <br />
-                <span className="text-orange-400">
-                  Oliver Ishiva
-                </span>
+                <span className="text-orange-400">Oliver Ishiva</span>
                 <br />
                 <span className="text-3xl md:text-4xl lg:text-5xl text-white/90">
                   A UI/UX Designer
                 </span>
               </h1>
-              
+
               <p className="text-lg md:text-xl text-white/80 max-w-2xl leading-relaxed">
-                I'm a UI/UX designer with expertise in creating beautiful, functional digital experiences. 
-                I specialize in user interface design, user experience research, and creating design systems 
-                that help businesses grow.
+                I'm a Full-Stack Developer, Digital Marketer, Cybersecurity
+                Specialist, and Creative Designer — crafting secure,
+                high-performing digital experiences that are as visually
+                compelling as they are technically robust.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button
                 size="lg"
-                onClick={() => scrollToSection('portfolio')}
+                onClick={() => scrollToSection("portfolio")}
                 className="bg-orange-400 hover:bg-orange-500 text-white font-semibold px-8 py-6 text-lg rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl"
               >
                 Get Started
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              
+
               <Button
                 variant="outline"
                 size="lg"
@@ -77,17 +79,17 @@ const HeroSection = () => {
             {/* Stats */}
             <div className="flex items-center gap-8 pt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-white">8+</div>
+                <div className="text-3xl font-bold text-white">3+</div>
                 <div className="text-sm text-white/70">Years Experience</div>
               </div>
               <div className="w-px h-12 bg-white/20"></div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-white">100+</div>
+                <div className="text-3xl font-bold text-white">50+</div>
                 <div className="text-sm text-white/70">Projects Done</div>
               </div>
               <div className="w-px h-12 bg-white/20"></div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-white">50+</div>
+                <div className="text-3xl font-bold text-white">20+</div>
                 <div className="text-sm text-white/70">Happy Clients</div>
               </div>
             </div>
@@ -98,7 +100,7 @@ const HeroSection = () => {
             <div className="relative">
               {/* Background Circle */}
               <div className="absolute inset-0 w-80 h-80 bg-gradient-to-br from-orange-400/20 to-yellow-400/20 rounded-full blur-3xl"></div>
-              
+
               {/* Profile Image Container */}
               <div className="relative w-72 h-72 lg:w-80 lg:h-80">
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-400 to-yellow-400 rounded-full p-1">
@@ -110,19 +112,26 @@ const HeroSection = () => {
                     />
                   </div>
                 </div>
-                
+
                 {/* Floating Elements */}
                 <div className="absolute -top-4 -right-4 bg-white rounded-xl p-3 shadow-lg animate-float">
                   <div className="flex items-center gap-2">
                     <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                    <span className="text-sm font-medium text-gray-700">Available</span>
+                    <span className="text-sm font-medium text-gray-700">
+                      Available
+                    </span>
                   </div>
                 </div>
-                
-                <div className="absolute -bottom-6 -left-6 bg-white rounded-xl p-4 shadow-lg animate-float" style={{ animationDelay: '1s' }}>
+
+                <div
+                  className="absolute -bottom-6 -left-6 bg-white rounded-xl p-4 shadow-lg animate-float"
+                  style={{ animationDelay: "1s" }}
+                >
                   <div className="text-center">
-                    <div className="text-lg font-bold text-gray-900">UI/UX</div>
-                    <div className="text-xs text-gray-600">Designer</div>
+                    <div className="text-lg font-bold text-gray-900">
+                      Full stack Dev
+                    </div>
+                    <div className="text-xs text-gray-600">Dev Oliver</div>
                   </div>
                 </div>
               </div>
