@@ -1,7 +1,14 @@
-
-import { Code, Palette, Shield, TrendingUp, Server, Database, Smartphone, Globe } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
+import {
+  Code,
+  Palette,
+  Shield,
+  TrendingUp,
+  Server,
+  Database,
+  Smartphone,
+  Globe,
+} from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
 const SkillsSection = () => {
   const skillCategories = [
@@ -9,46 +16,41 @@ const SkillsSection = () => {
       title: "Full-Stack Development",
       icon: Code,
       color: "cyber-blue",
-      skills: [
-        { name: "React/Next.js", level: 95 },
-        { name: "Laravel/PHP", level: 90 },
-        { name: "Node.js/Express", level: 85 },
-        { name: "TypeScript", level: 90 }
-      ]
+      skills: ["React/Next.js", "Laravel/PHP", "Node.js/Express", "TypeScript"],
     },
     {
       title: "Digital Marketing",
       icon: TrendingUp,
       color: "cyber-purple",
       skills: [
-        { name: "SEO/SEM", level: 88 },
-        { name: "Social Media Marketing", level: 92 },
-        { name: "Google Ads", level: 85 },
-        { name: "Analytics & Reporting", level: 90 }
-      ]
+        "SEO/SEM",
+        "Social Media Marketing",
+        "Google Ads",
+        "Analytics & Reporting",
+      ],
     },
     {
       title: "Cybersecurity",
       icon: Shield,
       color: "cyber-teal",
       skills: [
-        { name: "Penetration Testing", level: 80 },
-        { name: "Security Auditing", level: 85 },
-        { name: "Encryption & WAF", level: 88 },
-        { name: "Compliance", level: 82 }
-      ]
+        "Penetration Testing",
+        "Security Auditing",
+        "Encryption & WAF",
+        "Compliance",
+      ],
     },
     {
       title: "Design & UI/UX",
       icon: Palette,
       color: "cyber-blue",
       skills: [
-        { name: "Figma/Adobe Suite", level: 90 },
-        { name: "UI/UX Design", level: 88 },
-        { name: "Brand Identity", level: 85 },
-        { name: "Prototyping", level: 87 }
-      ]
-    }
+        "Figma/Adobe Suite",
+        "UI/UX Design",
+        "Brand Identity",
+        "Prototyping",
+      ],
+    },
   ];
 
   const technologies = [
@@ -69,32 +71,36 @@ const SkillsSection = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-cyber-blue to-cyber-purple mx-auto mb-4"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A diverse skill set spanning development, design, marketing, and security
+            A diverse skill set spanning development, design, marketing, and
+            security
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="cyber-border bg-card/50 backdrop-blur-sm hover: hover:shadow-lg hover:shadow-cyber-blue/10 transition-all duration-300">
+            <Card
+              key={index}
+              className="cyber-border bg-card/50 backdrop-blur-sm hover: hover:shadow-lg hover:shadow-cyber-blue/10 transition-all duration-300"
+            >
               <CardContent className="p-6">
                 <div className="flex items-center mb-6">
-                  <div className={`p-3 rounded-full bg-${category.color}/10 mr-4`}>
-                    <category.icon className={`h-6 w-6 text-${category.color}`} />
+                  <div
+                    className={`p-3 rounded-full bg-${category.color}/10 mr-4`}
+                  >
+                    <category.icon
+                      className={`h-6 w-6 text-${category.color}`}
+                    />
                   </div>
                   <h3 className="text-xl font-semibold">{category.title}</h3>
                 </div>
-                
-                <div className="space-y-4">
+
+                <div className="grid grid-cols-2 gap-3">
                   {category.skills.map((skill, skillIndex) => (
-                    <div key={skillIndex}>
-                      <div className="flex justify-between mb-2">
-                        <span className="text-sm font-medium">{skill.name}</span>
-                        <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                      </div>
-                      <Progress 
-                        value={skill.level} 
-                        className="h-2"
-                      />
+                    <div
+                      key={skillIndex}
+                      className="p-3 rounded-lg bg-muted/30 text-center border border-cyber-blue/20 hover:border-cyber-blue/40 transition-colors duration-300"
+                    >
+                      <span className="text-sm font-medium">{skill}</span>
                     </div>
                   ))}
                 </div>
@@ -123,8 +129,16 @@ const SkillsSection = () => {
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-semibold mb-8">Soft Skills</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {['Creative Problem Solving', 'Team Leadership', 'Client Communication', 'Detail-Oriented'].map((skill, index) => (
-              <div key={index} className="p-4 rounded-lg border border-cyber-purple/30 bg-card/20">
+            {[
+              "Creative Problem Solving",
+              "Team Leadership",
+              "Client Communication",
+              "Detail-Oriented",
+            ].map((skill, index) => (
+              <div
+                key={index}
+                className="p-4 rounded-lg border border-cyber-purple/30 bg-card/20"
+              >
                 <p className="font-medium text-cyber-purple">{skill}</p>
               </div>
             ))}
