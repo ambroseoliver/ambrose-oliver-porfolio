@@ -43,9 +43,9 @@ const HeroSection = () => {
                 <br />
                 <span className="text-orange-400">Oliver Ishiva</span>
                 <br />
-                <span className="text-3xl md:text-4xl lg:text-5xl text-white/90">
+                {/* <span className="text-3xl md:text-4xl lg:text-5xl text-white/90">
                   A UI/UX Designer
-                </span>
+                </span> */}
               </h1>
 
               <p className="text-lg md:text-xl text-white/80 max-w-2xl leading-relaxed">
