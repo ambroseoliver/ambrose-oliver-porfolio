@@ -106,7 +106,7 @@ const HeroSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-400 to-yellow-400 rounded-full p-1">
                   <div className="w-full h-full bg-white rounded-full p-2">
                     <img
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                      src="https://i.postimg.cc/1txHWQGQ/IMG-20250622-WA0000.jpg"
                       alt="Oliver Ishiva"
                       className="w-full h-full object-cover rounded-full"
                     />
