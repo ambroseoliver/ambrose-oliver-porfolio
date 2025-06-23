@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-end gap-4">
             <div className="flex items-center space-x-4">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/ambroseoliver"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-cyber-blue transition-colors"
@@ -32,7 +32,7 @@ const Footer = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://linkedin.com/in/oliver ishiva"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-cyber-blue transition-colors"
